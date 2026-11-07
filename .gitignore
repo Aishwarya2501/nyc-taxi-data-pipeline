@@ -1,0 +1,14 @@
+# Ignore raw datasets and Delta Lake outputs
+data/raw_data/
+data/delta/
+*.parquet
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore OS environment files
+.DS_Store
+Thumbs.db

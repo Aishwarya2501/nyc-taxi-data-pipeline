@@ -16,7 +16,7 @@ Roughly 80% of the submitted code is mine — the AI's share is limited to refac
 * **`src/quality_checks.py`:** The check logic and every rule design are mine, all versions. The final formatting pass of the file was done by the AI at my direction, and I verified it produces row-for-row identical output to my own version.
 * **`src/orchestrator.py`:** I designed the stage execution and modular flow. The AI drafted the boilerplate for the dynamic path resolution and the Unity Catalog `saveAsTable` syntax based on my instructions.
 * **`README.md`:** I provided the outline, architectural decisions, and template. The AI drafted the documentation.
-* ** query results (`QUERY_RESULTS.md`):** AI-generated file. Every number comes straight from SQL queries i've written without AI help.
+* query results (`QUERY_RESULTS.md`):AI-generated file. Every number comes straight from SQL queries i've written without AI help.
 
 ### What the AI Got Wrong (My Corrections)
 As expected, the AI lacked broader architectural context, requiring me to override it on several fronts:

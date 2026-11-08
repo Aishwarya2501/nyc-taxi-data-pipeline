@@ -38,12 +38,3 @@ def add_zone_names(trips_df, zones_df):
                           .join(F.broadcast(do_zones), on="DOLocationID", how="left")
                           
     return enriched_df
-
-def transform(yellow_df, green_df, zones_df):
-    """
-    Main transformation pipeline: aligns schemas and combines with zone names.
-    """
-    combined = align_and_combine(yellow_df, green_df)
-    enriched = add_zone_names(combined, zones_df)
-    
-    return enriched

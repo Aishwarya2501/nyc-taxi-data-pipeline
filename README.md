@@ -9,7 +9,7 @@ It loads Yellow + Green taxi parquet (Dec 2024 - Jan 2025) and writes two Unity 
 
 ## How to run it
 
-The raw files live in `data/raw_data/`. Open `src/orchestrator.py` and click Run All (or run it as a Job task, or `python src/orchestrator.py`). It finds the data relative to the project, no hardcoded paths. To point it somewhere else, set the `TAXI_DATA_DIR` environment variable to your project root.
+The raw files live in `data/raw_data/` — if you don't have them yet, download the four trip parquet files and `taxi_zone_lookup.csv` from the TLC links in the brief and drop them there. Open `src/orchestrator.py` and click Run All (or `python src/orchestrator.py`). It finds the data relative to the project, no hardcoded paths. To point it somewhere else, set the `TAXI_DATA_DIR` environment variable to your project root.
 
 Once it's done, the analytics are in the `src/queries` notebook, and the three query results are also saved as CSVs in `outputs/`.
 

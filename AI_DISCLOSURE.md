@@ -6,7 +6,7 @@
 The system design and foundational approach were my own decisions. I opted to structure the pipeline using a **Medallion architecture (Bronze → Silver → Gold)** and implemented a **Quarantine pattern** (retaining failed rows with explicit rejection tags rather than silently dropping data). I mapped out the ingest, transform, and validation stages upfront, using the AI as an execution tool to help build out that structural blueprint.
 
 **Code Breakdown:**
-Roughly 80% of the submitted code is mine — the AI's share is limited to refactoring passes and boilerplate (the orchestrator's dynamic parts, the formatting of checks in `quality_checks.py`). For documentation, roughly 60% is my effort — `DATA_DICTIONARY.md` has my effort in lining up the column descriptions, and I supplied the outline, facts, and approach behind the README and query exports; the AI drafted the prose.
+Roughly 80% of the submitted code is mine, the AI's share is limited to refactoring passes and boilerplate (the orchestrator's dynamic parts, the formatting of checks in `quality_checks.py`). For documentation, roughly 60% is my effort. `DATA_DICTIONARY.md` has my effort in lining up the column descriptions, and I supplied the outline, facts, and approach behind the README and query exports; the AI drafted the prose.
 
 
 ### What the AI Touched
